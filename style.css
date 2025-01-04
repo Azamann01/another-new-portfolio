@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+body {
+  height: 100vh;
+  background-color: #fff;
+}
+.navbar-section {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* background-color: skyblue; */
+  z-index: 100;
+}
+.nav-container {
+  height: 15vh;
+  width: 100%;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  box-shadow: 2px 4px 80px;
+  flex: 3;
+  background-color: #fff;
+  position: fixed;
+}
+.header-text {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+span {
+  color: rgb(112, 112, 201);
+  text-shadow: 2px 4px 8px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+li a {
+  font-size: 20px;
+  font-weight: 500;
+  gap: 20px;
+  padding: 20px;
+  margin: 10px;
+  color: black;
+}
+li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  color: rgb(112, 112, 201);
+}
+
+/* HERO_SECTION  */
+.hero {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  background: rgb(112, 112, 201);
+  height: 100vh;
+}
+
+.hero-container-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  margin: 40px;
+  padding: 80px;
+}
+.text-head {
+  font-size: 40px;
+}
+.para-hero {
+  font-size: 20px;
+}
+
+.hero-btn {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 0 110px;
+  height: 30vh;
+  background: skyblue;
+}
+.btn {
+  border: 1px solid #333;
+  border-radius: 5px;
+  height: 50px;
+  width: 15%;
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+}
+.btn:hover {
+  text-shadow: 2px 4px 6px;
+}
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 20px;
+  font-size: 25px;
+  gap: 30px;
+  padding: 8px;
+}
+.social-link-linkedln {
+  color: rgb(68, 68, 230);
+}
+.social-link-twitter {
+  color: black;
+}
+.socials-link a:hover {
+  cursor: pointer;
+}
+.image-wrraper {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  outline: none;
+  background-image: none;
+}
+.hero-img {
+  border-radius: 100%;
+  width: 300px;
+  box-shadow: 2px 4px 10px #fff;
+}
+
+/* ABOUT ME SECTION  */
+
+.about-section {
+  display: flex;
+  background: skyblue;
+}
+.about-head {
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #333;
+}
+.about-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  gap: 30px;
+  color: #333;
+}
+.about-img {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 300px;
+  height: 300px;
+}
+
+.text-about {
+  gap: 30px;
+}
+
+/* PROJECT-SECTION  */
+
+.projects-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  border: 0.5px solid;
+  border-radius: 10px;
+  width: 90%;
+  margin: 65px;
+}
+.project-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 50px;
+  text-transform: uppercase;
+}
+.project-container {
+  display: flex;
+  border: 1px solid;
+  /* box-shadow: 0 0 10px; */
+  width: 400px;
+  height: 50vh;
+  margin: 40px;
+}
+.project-image {
+  object-fit: contain;
+  height: 300px;
+  width: 100%;
+  padding: 0 40px 0 40px;
+
+  align-items: center;
+  justify-content: center;
+}
+.project-box {
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 7px;
+  transition: 0.5s ease;
+}
+.project-text {
+  display: flex;
+  font-size: 18px;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.project-box:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  box-shadow: 0 0 20px;
+}
+
+.project-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head-text {
+  font-size: 32px;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+
+@media screen and (max-width: 900px) {
+  /* .nav-container{
+        display: flex;
+    } */
+}
