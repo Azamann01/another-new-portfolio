@@ -8,8 +8,10 @@ a {
   text-decoration: none;
 }
 body {
-  height: 100vh;
+  width: auto;
+  min-height: 100vh;
   background-color: #fff;
+  scroll-behavior: smooth;
 }
 .navbar-section {
   position: relative;
@@ -69,6 +71,8 @@ li a:hover {
   align-items: center;
   background: rgb(112, 112, 201);
   height: 100vh;
+  border-radius: 20px;
+  margin: 5px;
 }
 
 .hero-container-section {
@@ -138,12 +142,30 @@ li a:hover {
   width: 300px;
   box-shadow: 2px 4px 10px #fff;
 }
+.cv-btn {
+  width: 30%;
+  height: 10vh;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #fff;
+}
+#cv-btn {
+  color: #333;
+}
 
 /* ABOUT ME SECTION  */
 
 .about-section {
   display: flex;
-  background: skyblue;
+  background: rgb(222, 222, 222);
+  height: 150vh;
+  margin: 5px;
+  border-radius: 8px;
+}
+.about-container {
+  margin: 50px;
 }
 .about-head {
   font-size: 32px;
@@ -176,16 +198,62 @@ li a:hover {
 .text-about {
   gap: 30px;
 }
+.skills-section {
+  margin: 30px;
+}
+
+.skills-head .skill-head-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #333;
+}
+.skills-box {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0 0 10px;
+  width: 40%;
+  height: 50vh;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  margin: 40px;
+}
+.skill-textt {
+  font-size: 28px;
+}
+.skills {
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+
+  line-height: 50px;
+  letter-spacing: 2px;
+}
 
 /* PROJECT-SECTION  */
 
+.project-area {
+  height: 150vh;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-color: rgb(222, 222, 222);
+  margin: 5px;
+}
 .projects-section {
   display: flex;
+
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  background-color: rgb(222, 222, 222);
+
   border: 0.5px solid;
   border-radius: 10px;
+  height: 80vh;
   width: 90%;
   margin: 65px;
 }
@@ -197,11 +265,13 @@ li a:hover {
   padding: 20px;
   margin: 50px;
   text-transform: uppercase;
+  color: #333;
 }
 .project-container {
   display: flex;
   border: 1px solid;
   /* box-shadow: 0 0 10px; */
+  background: #fff;
   width: 400px;
   height: 50vh;
   margin: 40px;
@@ -245,6 +315,76 @@ li a:hover {
   text-align: center;
   align-self: center;
   justify-self: center;
+}
+
+/* contact section  */
+
+.contact-container {
+  /* display: flex; */
+  height: 100vh;
+  width: auto;
+}
+.contact-head {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.contact-me {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+
+  width: 60%;
+  padding: 30px;
+  background-color: rgb(222, 222, 222);
+}
+input {
+  width: 60%;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact-messg {
+  height: 20vh;
+  text-align: center;
+}
+.contact-btn {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 9px;
+  width: 20%;
+  height: 8vh;
+  margin: 0 150px;
+  margin-top: 30px;
+  background-color: #fff;
+  color: #333;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 0 10px;
+}
+.contact-btn:hover {
+  color: #333;
+
+  box-shadow: none;
 }
 
 @media screen and (max-width: 900px) {
