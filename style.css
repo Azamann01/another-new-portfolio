@@ -402,7 +402,7 @@ input {
 
 @media screen and (max-width: 900px) {
   .navlist :where(#btn-close, .menu-open) {
-    font-size: 32px;
+    font-size: 30px;
   }
   .navlist,
   #btn-close {
