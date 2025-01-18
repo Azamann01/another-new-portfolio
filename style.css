@@ -409,8 +409,7 @@ input {
   .navlists :where(#btn-close .menu-open) {
     font-size: 30px;
   }
-
-  body.show-mobile-menu .nav-container::before {
+  body.show-mobile-menu .navbar-section::before {
     content: "";
     position: fixed;
     left: 0;
@@ -421,23 +420,28 @@ input {
     background: rgba(0, 0, 0, 0.2);
   }
 
+  body.show-mobile-menu .nav-container .navlists {
+    right: 0;
+  }
+
   .navlists,
   #btn-close {
     position: absolute;
-    right: 30px;
-    top: 30px;
+    right: 20px;
+    top: 24px;
     cursor: pointer;
   }
   .menu-open,
   #btn-close {
     display: block;
+    cursor: pointer;
   }
 
   .navlists {
     display: block;
     background-color: #333;
     position: fixed;
-    left: -300px;
+    right: -300px;
     top: 0;
     width: 300px;
     height: 100%;
@@ -446,11 +450,188 @@ input {
     flex-direction: column;
     align-items: center;
     display: flex;
+    transition: right 0.2s ease;
   }
   #nav-lists {
     color: #fff;
     display: block;
     margin-top: 20px;
     font-size: 24px;
+  }
+
+  /* styling of hero section  */
+  .hero {
+    gap: 30px;
+    text-align: center;
+    padding: 30px 20px 20px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 170vh;
+    width: auto;
+  }
+  .hero-container-section {
+    display: flex;
+  }
+  .hero-container-section {
+    margin-bottom: 1px;
+  }
+  .text .text-head {
+    font-size: 42px;
+  }
+  .text .para-hero {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    padding: 25px;
+  }
+  .socials-link {
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    transition: 0.5s ease-in-out;
+  }
+  .social-link-linkedln:hover {
+    color: #fff;
+  }
+  .social-link-github:hover {
+    color: #fff;
+  }
+  .social-link-twitter:hover {
+    color: #fff;
+  }
+  .cv-btn {
+    width: 40%;
+    height: 10vh;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  #cv-btn {
+    color: #fff;
+  }
+  #cv-btn:hover {
+    text-shadow: 2px 2px 6px;
+  }
+
+  /* About-Me section  */
+}
+
+/*  Responsive 1024px section  */
+@media screen and (max-width: 1024px) {
+  .navlists :where(#btn-close .menu-open) {
+    font-size: 30px;
+  }
+  body.show-mobile-menu .navbar-section::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  body.show-mobile-menu .nav-container .navlists {
+    right: 0;
+  }
+
+  .navlists,
+  #btn-close {
+    position: absolute;
+    right: 20px;
+    top: 24px;
+    cursor: pointer;
+  }
+  .menu-open,
+  #btn-close {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navlists {
+    display: block;
+    background-color: #333;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 300px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    transition: right 0.2s ease;
+  }
+  #nav-lists {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  /* styling of hero section  */
+  .hero {
+    gap: 30px;
+    text-align: center;
+    padding: 30px 20px 20px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 170vh;
+    width: auto;
+  }
+  .hero-container-section {
+    display: flex;
+  }
+  .hero-container-section {
+    margin-bottom: 1px;
+  }
+  .text .text-head {
+    font-size: 42px;
+  }
+  .text .para-hero {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    padding: 25px;
+  }
+  .socials-link {
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    transition: 0.5s ease-in-out;
+  }
+  .social-link-linkedln:hover {
+    color: #fff;
+  }
+  .social-link-github:hover {
+    color: #fff;
+  }
+  .social-link-twitter:hover {
+    color: #fff;
+  }
+  .cv-btn {
+    width: 40%;
+    height: 10vh;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  #cv-btn {
+    color: #fff;
+  }
+  #cv-btn:hover {
+    text-shadow: 2px 2px 6px;
   }
 }
